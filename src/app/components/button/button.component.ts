@@ -1,10 +1,10 @@
-import { NgStyle } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-button',
   standalone: true,
-  imports: [NgStyle],
+  imports: [CommonModule],
   templateUrl: './button.component.html',
   styleUrl: './button.component.css',
 })
