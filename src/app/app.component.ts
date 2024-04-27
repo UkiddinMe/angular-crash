@@ -4,13 +4,14 @@ import { HeaderComponent } from "./components/header/header.component";
 import { TasksComponent } from "./components/tasks/tasks.component";
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [RouterOutlet, HeaderComponent, CommonModule, TasksComponent, HttpClientModule]
+  imports: [RouterOutlet, HeaderComponent, CommonModule, TasksComponent, HttpClientModule, FormsModule]
 })
 
 export class AppComponent {
