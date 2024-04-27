@@ -1,4 +1,5 @@
-<form class="add-form" (ngSubmit)="onSubmit()" ngStyle="display: ">
+<form class="add-form" (ngSubmit)="onSubmit()" 
+*ngIf="showMyself">
     <div class="form-control">
         <label for="text">Task</label>
         <input type="text" name="text" id="text" [(ngModel)]="text" placeholder="Add Task" />
