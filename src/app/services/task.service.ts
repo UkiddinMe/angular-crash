@@ -33,4 +33,8 @@ export class TaskService {
     const url = `${this.apiUrl}/${task.id}`;
     return this.bcknd.put<Task>(url, task, httpOptions);
   }
+
+  addoTasko(task: Task): Observable<Task> {
+    return this.bcknd.post<Task>(this.apiUrl, task, httpOptions);
+  }
 }
